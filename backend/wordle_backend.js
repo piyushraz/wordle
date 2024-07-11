@@ -5,6 +5,15 @@ const cookieParser = require('cookie-parser');
 const fs = require('fs');
 const WebSocketServer = require('ws').Server;
 const Wordle = require("./model.js");
+const cors = require('cors');
+
+
+const corsOptions = {
+    origin: 'https://bejewelled-licorice-8fbb30.netlify.app/', // Make sure to replace this with your actual Netlify domain
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
 
 const app = express();
 app.use(cookieParser());

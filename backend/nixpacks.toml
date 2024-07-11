@@ -1,5 +1,0 @@
-[phases.install]
-run = "npm install"
-
-[phases.start]
-run = "node wordle_backend.js"
