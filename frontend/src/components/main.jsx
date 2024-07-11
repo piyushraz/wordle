@@ -125,7 +125,10 @@ class Main extends React.Component {
       }
     });
     document.addEventListener('keydown', this.handleKeyPress);
-    this.socket = new WebSocket(`ws://${window.location.hostname}:8212`);
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+    const wsPort = 8212
+    const wsUrl = `${wsProtocol}://${window.location.hostname}:${wsPort}`;
+    this.socket = new WebSocket(wsUrl);
     this.socket.onopen = () => {
       console.log("WebSocket connected for sending game outcomes.");
     };
