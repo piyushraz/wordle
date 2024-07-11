@@ -3,7 +3,7 @@ module.exports = function (app) {
     app.use(
         '/api',
         createProxyMiddleware({
-            target: process.env.REACT_APP_BACKEND_URL,
+            target: 'https://wordle-production-5838.up.railway.app/',
             changeOrigin: true,
         })
     );
