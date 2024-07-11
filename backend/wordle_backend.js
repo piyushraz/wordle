@@ -9,7 +9,7 @@ const cors = require('cors');
 
 
 const corsOptions = {
-    origin: 'https://bejewelled-licorice-8fbb30.netlify.app/', // Make sure to replace this with your actual Netlify domain
+    origin: 'https://bejewelled-licorice-8fbb30.netlify.app/git add .', // Make sure to replace this with your actual Netlify domain
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
