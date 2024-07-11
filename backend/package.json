@@ -1,13 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Wordle backend server",
+  "main": "wordle_backend.js",
   "scripts": {
     "start": "node wordle_backend.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
