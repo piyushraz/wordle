@@ -207,6 +207,11 @@ app.get('/api/username/:username/stats', function (req, res) {
     res.json(userStats);
 });
 
+// Add a route to handle the root path
+app.get('/', (req, res) => {
+    res.send('Welcome to the Wordle Backend API');
+});
+
 app.listen(port, function () {
     console.log('Example app listening on port ' + port);
 });
