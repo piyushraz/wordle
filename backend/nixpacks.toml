@@ -1,0 +1,4 @@
+[phases]
+install = "npm install"
+build = ""
+start = "node wordle_backend.js"
