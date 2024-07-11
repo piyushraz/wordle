@@ -4,7 +4,7 @@
   "description": "Wordle backend server",
   "main": "wordle_backend.js",
   "scripts": {
-    "start": "node wordle_backend.js",
+    "start": "nodejs wordle_backend.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Your Name",

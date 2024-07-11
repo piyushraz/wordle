@@ -1,7 +1,0 @@
-[[phases]]
-name = "install"
-run = "npm install"
-
-[[phases]]
-name = "start"
-run = "node wordle_backend.js"
