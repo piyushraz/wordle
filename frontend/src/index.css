@@ -1,0 +1,335 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	margin: 10px;
+	padding: 0;
+	background: #000;
+	color: #fff;
+}
+
+header {
+	font-weight: bold;
+	border-bottom: 1px solid grey;
+	padding-top: 5ex;
+	padding-bottom: 1ex;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+}
+
+.alignleft {
+	width: 33.33333%;
+	text-align: left;
+}
+
+.aligncenter {
+	width: 33.33333%;
+	text-align: center;
+}
+
+.alignright {
+	width: 33.33333%;
+	text-align: right;
+}
+
+.alignright a .material-symbols-outlined:hover {
+	transform: scale(1.2);
+}
+
+nav a {
+	color: white;
+}
+
+nav .ui_home {
+	font-size: x-large;
+	text-decoration: underline;
+}
+
+.textblock {
+	border: 1px solid white;
+	width: 50%;
+	padding: 1ex;
+	margin: 1ex auto 1ex auto;
+	cursor: pointer;
+}
+
+.letterbox td {
+	text-align: center;
+	border: 1px solid grey;
+	width: 3ex;
+	height: 3ex;
+}
+
+.keyboardrow td {
+	text-align: center;
+	border: 1px solid grey;
+	width: 3ex;
+	height: 3ex;
+	cursor: pointer;
+	user-select: none;
+}
+
+.new-game-button {
+	background: #fff;
+	cursor: pointer;
+	padding: 8px 16px; 
+	font-size: 1em; 
+	font-weight: 500; 
+	border-radius: 6px; 
+	border: 2px solid white; 
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+	transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+  
+.new-game-button:hover {
+	background-color: #6f6; 
+	color: black;
+	border: 2px solid #6f6; 
+}
+  
+.ui_top h2 {
+	text-align: center;
+}
+
+nav.ui_home span.ui_home,
+nav.ui_username span.ui_username,
+nav.ui_play_lobby span.ui_play, 
+nav.ui_play_lobby span.ui_lobby, 
+nav.ui_stats span.ui_stats,
+nav.ui_instructions span.ui_instructions {
+	color: #6f6;
+	background: #000;
+}
+
+nav span.active {
+	color: #6f6; 
+	background: #000;
+}
+
+.exists {
+	background-color: #d79a22;
+	color: white;
+}
+
+.miss {
+	background-color: #777;
+	color: white;
+}
+
+.correct {
+	background-color: #479a22;
+	color: white;
+}
+
+nav span.active {
+	color: #6f6;
+	background: #000;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+}
+
+.popup-content {
+	background: black;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	z-index: 1000;
+	width: auto;
+	max-width: 500px;
+	border: 2px solid white;
+	color: white;
+}
+
+.popup-header,
+.popup-body,
+.popup-footer {
+	margin-bottom: 10px;
+}
+
+.popup-footer button {
+	padding: 5px 10px;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.popup-footer button:hover {
+	background-color: white;
+	color: black;
+}
+
+.error-popup {
+	position: absolute;
+	right: 20px;
+	background-color: #f44336;
+	color: white;
+	padding: 10px;
+	border-radius: 4px;
+	z-index: 100;
+	transition: opacity 2s ease-out;
+	opacity: 1;
+}
+
+.fade {
+	opacity: 0 !important;
+	transition: opacity 2s ease-out;
+}
+
+.game-mode h2,
+.letter-examples h2 {
+	font-size: 1.2em;
+	margin-bottom: 15px;
+}
+
+.game-mode p,
+.letter-examples p {
+	font-size: 1em;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.example-table {
+	border-collapse: separate;
+	border-spacing: 5px 10px;
+	margin-bottom: 20px;
+}
+
+.example-table td {
+	width: 3ex;
+	height: 3ex;
+	text-align: center;
+	border: 1px solid grey;
+	font-family: monospace;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+}
+
+.example-table .correct-position {
+	background-color: #479a22;
+}
+
+.example-table .incorrect-position {
+	background-color: #d79a22;
+}
+
+.example-table .miss {
+	background-color: #777;
+}
+
+.timer-container {
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	color: #fff; 
+	font-family: 'Roboto', sans-serif; 
+	margin: 20px 0; 
+}
+  
+.time-left-label {
+	margin-right: 10px; 
+	font-size: 1rem; 
+}
+  
+.timer-icon {
+	font-size: 1.5rem; 
+	margin-right: 5px; 
+}
+  
+.timer-time {
+	font-size: 1.5rem; 
+	font-weight: bold; 
+}
+  
+
+.players-in-game {
+	margin-top: 20px;
+	color: #fff; 
+	text-align: center; 
+}
+  
+.players-in-game h3 {
+	margin-bottom: 10px; 
+}
+  
+.players-list {
+	list-style-type: none;
+	padding: 0; 
+}
+  
+.players-list li {
+	border: 1px solid #fff; 
+	padding: 5px 10px; 
+	margin-bottom: 5px; 
+	border-radius: 5px; 
+	display: inline-block; 
+	margin-right: 10px; 
+	margin-left: 10px; 
+	white-space: nowrap; 
+}
+  
+.players-list li:last-child {
+	margin-right: 0;
+}
+  
+.players-list li.current-player {
+	background-color: #444; 
+	color: #fff; 
+}
+  
+.stats-container {
+	text-align: center;
+	margin: 20px 0;
+	padding: 10px;
+	border: 1px solid #fff; 
+	border-radius: 10px; 
+	max-width: 600px; 
+	margin: 20px auto; 
+	background: #444; 
+}
+  
+.stats-title {
+	color: #fff;
+	font-size: 1.5em;
+	margin-bottom: 15px; 
+}
+  
+.stats-wins-losses {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	gap: 20px; 
+}
+  
+.stats-wins,
+.stats-losses {
+	color: #fff;
+	font-size: 1.2em;
+	padding: 5px 20px;
+	border: 1px solid #fff; 
+	border-radius: 5px; 
+}
+  
+.winner-name {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+  
